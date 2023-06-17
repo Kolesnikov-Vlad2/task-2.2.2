@@ -9,8 +9,9 @@ import java.util.stream.Collectors;
 
 @Service
 public class CarServiceImp implements CarService {
+
     @Autowired
-    private CarDao cardao = new CarDaoImp();
+    private CarDao cardao;
 
     @Override
     public List<Car> listCars(int count) {
